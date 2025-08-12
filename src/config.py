@@ -1,10 +1,10 @@
 import os
 from dotenv import load_dotenv
-from pydantic import BaseSettings
+from pydantic import BaseModel
 
 load_dotenv()
 
-class Settings(BaseSettings):
+class Settings(BaseModel):
     SUPABASE_URL: str = os.getenv("SUPABASE_URL")
     SUPABASE_KEY: str = os.getenv("SUPABASE_KEY")
     ZAPI_TOKEN: str = os.getenv("ZAPI_TOKEN")
