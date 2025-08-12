@@ -6,7 +6,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 class ZAPIService:
-    BASE_URL: str = settings.ZAPI_BASE_URL
+    BASE_URL: str = settings.ZAPIBASE_URL
 
     @classmethod
     def send_message(cls, phone: str, message: str) -> Optional[dict]:
