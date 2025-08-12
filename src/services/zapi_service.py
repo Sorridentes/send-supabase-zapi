@@ -23,7 +23,7 @@ class ZAPIService:
         }
 
         try:
-            response = requests.post(url, json=payload, headers=headers, timeout=10)
+            response = requests.post(url, json=payload, headers=headers, timeout=120)
             response.raise_for_status() # Verifica se houve erro na requisição
             logger.info(f"Messagem enviada para {phone} - Status: {response.status_code}")
             return response.json()
