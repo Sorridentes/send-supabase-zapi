@@ -34,7 +34,7 @@ Sistema para envio automatizado de mensagens WhatsApp usando contatos armazenado
     
     # Z-API
     ZAPI_TOKEN=seu_token
-    ZAPI_INSTANCE=sua_instancia
+    ZAPIBASE_URL=sua_url_do_zapi
     ```
 ### 🛠️ Instalação
 
@@ -58,4 +58,5 @@ Sistema para envio automatizado de mensagens WhatsApp usando contatos armazenado
 ### ▶️ Execução
     ```bash
     python -m src.main
+    ```
 
